@@ -14,4 +14,6 @@ You can try launching a VM with Amazon EC2 yourself (at your own risk!) by follo
 
 https://aws.amazon.com/getting-started/tutorials/launch-windows-vm/
 
+## License
+
 The contents of this repository are licensed for reuse under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
