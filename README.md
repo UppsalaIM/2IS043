@@ -1,8 +1,8 @@
-# 2IS043 Informationanalys, Lab Notebooks
+# 2IS043 Informationanalys och beslutsstöd, example notebooks
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/UppsalaIM/2IS043/master)
 
-This repository contains the lab notebooks for the 2IS043 Informationanalys course.
+This repository contains the lab notebooks for the 2IS043 Informationanalys och beslutsstöd course.
 
 **Launch the notebooks on the cloud by clicking on the `launch binder` button above**.
 
