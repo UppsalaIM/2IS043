@@ -26,7 +26,7 @@ Wrapper library for MKIT Information Analysis and Decision Making course labs.
 Features
 --------
 
-* TODO
+* Implements wrappers for code examples and labs for the 2IS043 Information Analysis and Decision Making course.
 
 Credits
 -------
