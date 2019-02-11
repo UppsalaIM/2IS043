@@ -3,14 +3,8 @@
 Base requirements:
 - [Python 3](https://www.python.org/downloads/).7 or newer
 - Required Python packages
-  - pandas
-  - textmining3
-  - wordcloud
-  - matplotlib
-  - mlxtend
-  - graphviz
-  - scikit-learn
-  - okpy
+  - mkitlabs
+  - tweepy
 - [Jupyter](https://jupyter.org/)
 - [graphviz](http://graphviz.org/)
 
