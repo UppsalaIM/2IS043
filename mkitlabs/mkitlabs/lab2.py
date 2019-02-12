@@ -189,18 +189,6 @@ def titantic_decision_tree():
     sample['true survived'] = y_test.values
     return sample
 
-def titantic_decision_tree_accuracy():
-    titanic_passengers = view_titanic_final_table()[['fare', 'age', 'sibsp', 'sex_male']]
-    survived_data = view_titanic_final_table().survived
-    X_train, X_test, y_train, y_test = train_test_split(titanic_passengers, survived_data, test_size=0.25)
-    classifier = DecisionTreeClassifier(max_depth=3)
-    classifier.fit(X_train.values, y_train.values)
-    sample = X_test
-    sample['predicted_survived'] = classifier.predict(sample)
-    sample['true survived'] = y_test.values
-    from sklearn.metrics import accuracy_score
-    return accuracy_score(y_test.values, classifier.predict(sample))
-
 def split_datasets_for_dtviz(test_size_percent):
     test_size_fraction = test_size_percent / 100
     titanic_passengers = view_titanic_final_table()[['fare', 'age', 'sibsp', 'sex_male']]
@@ -211,6 +199,8 @@ def split_datasets_for_dtviz(test_size_percent):
     tree_plot = Source(tree.export_graphviz(classifier, out_file=None,
                             feature_names=X_train.columns, class_names=['Dead', 'Alive'],
                             filled=True, rounded=True, special_characters=True))
+    tree_plot.filename = "Titanic_Decision_Tree"
+    tree_plot.render()
     return tree_plot
 
 def plot_decision_tree():
