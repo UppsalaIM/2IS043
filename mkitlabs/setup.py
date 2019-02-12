@@ -16,7 +16,8 @@ requirements = [
     "pandas",
     "textmining3",
     "wordcloud",
-    "scikit-learn"
+    "scikit-learn",
+    "graphviz"
 ]
 
 setup_requirements = [ ]
