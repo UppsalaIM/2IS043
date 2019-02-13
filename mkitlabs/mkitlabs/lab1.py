@@ -45,8 +45,6 @@ my_stop_words = ["och", "det", "att", "i", "en", "jag", "hon",
                 "sitta", "saadana", "vart", "dina", "vars",
                 "vaart", "vaara", "ert", "era", "vilka"]
 
-print("MKIT Labs initialized... OK!")
-
 def first_5_tweets():
     """
     for i, item in enumerate(bok_tweets.text.head()):
@@ -243,3 +241,5 @@ def plot_wordcloud():
         small_words=widgets.Checkbox(value=False, description='Filter small words', continuous_update=False),
         lower=widgets.Checkbox(value=False, description='Apply lowercase', continuous_update=False),
         more_stop_words=widgets.Text(value='aar,år', description='Additional stop words:', continuous_update=False))
+
+print("MKIT Lab 1 initialized... OK!")

@@ -5,7 +5,7 @@ from __future__ import print_function
 
 __author__ = """David Johnson"""
 __email__ = 'david.johnson@im.uu.se'
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 
 import matplotlib.pyplot as plt
 import warnings

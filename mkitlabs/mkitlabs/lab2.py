@@ -205,3 +205,5 @@ def split_datasets_for_dtviz(test_size_percent):
 
 def plot_decision_tree():
     interact(split_datasets_for_dtviz, test_size_percent=widgets.IntSlider(value=25, min=1, max=99, continuous_update=False))
+
+print("MKIT Lab 2 initialized... OK!")
