@@ -279,7 +279,7 @@ def interact_linearSVC():
         })
         return results
     interact(make_classifier,
-        corpus_size=widgets.IntSlider(min=10, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False),
+        corpus_size=widgets.IntSlider(min=60, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False),
         stopwords=widgets.Checkbox(value=False, description='Remove stopwords', continuous_update=False),
         stemming=widgets.Checkbox(value=False, description='Apply stemming', continuous_update=False)
     )
@@ -317,7 +317,7 @@ def interact_linearSVC_cross_validation():
         scores = cross_val_score(classifier, tdf_vectorizer.fit_transform(X_test), predictions, scoring='accuracy', cv=5)
         return scores
     interact(make_classifier,
-        corpus_size=widgets.IntSlider(min=10, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False),
+        corpus_size=widgets.IntSlider(min=60, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False),
         stopwords=widgets.Checkbox(value=False, description='Remove stopwords', continuous_update=False),
         stemming=widgets.Checkbox(value=False, description='Apply stemming', continuous_update=False)
     )
@@ -365,7 +365,7 @@ def plot_interact_linearSVC_cross_val_comparison():
             "Cross validation scores trained on {} records".format(corpus_size))
         return cross_val_scores.describe()
     interact(make_classifier,
-        corpus_size=widgets.IntSlider(min=10, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False)
+        corpus_size=widgets.IntSlider(min=60, max=len(complaints.dropna(subset=['Consumer complaint narrative'])), value=1000, continuous_update=False)
     )
 
 print("MKIT Lab 3 initialized... OK!")
