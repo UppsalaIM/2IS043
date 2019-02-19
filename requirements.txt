@@ -1,2 +1,7 @@
 -e mkitlabs/
 tweepy
+tensorflow
+keras
+matplotlib
+numpy
+pandas
